@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  width: 100%;
+  background-color: #032541;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  margin: 0;
+}
+ul {
+  display: flex;
+  gap: 20px;
+}
+.header_link ul {
+  display: flex;
+  width: 100%;
+}
+ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: bold;
+}
+.header-primary ul {
+  display: flex;
+  align-items: center;
+}
+.header-primary ul li:first-child {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.header-primary ul button {
+  padding: 3px 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 3px;
+  background: transparent;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.search-icon {
+  font-size: 25px;
+  color: rgb(59 130 246 / 0.5);
+}
+.header-logo,
+img {
+  width: 200px;
+  display: flex;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+main {
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(59 130 246 / 0.5);
+  display: flex;
+  align-items: center;
+}
+section {
   display: flex;
   flex-direction: column;
+}
+.home-page__title h1 {
+  font-size: 45px;
+  color: #fff;
+}
+.home-page__title {
+  margin-top: 20px;
+}
+.home-page__title p {
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.search__wrapper {
+  margin-top: 55px;
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.search__wrapper button {
+  padding: 0 30px;
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+  background: linear-gradient(to right, #1ed5a9 0%, #01b4e4 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search__wrapper input {
+  width: 100%;
+  height: 30px;
+  margin-left: 20px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+  outline: none;
 }
